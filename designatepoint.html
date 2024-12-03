@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多角形描画モード</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 500px; width: 100%; }
+        #finish-button { margin-top: 10px; }
+    </style>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <h1>多角形描画モード</h1>
+    <div id="map"></div>
+    <button id="finish-button">描画終了</button>
+    <div id="coordinates">ポイントの緯度と経度はここに表示されます。</div>
+
+    <script>
+        let map = L.map('map').setView([32.80961212162692, 129.87315947367335], 10);  // 東京の中心
+        let polygonPoints = [];
+        let polygonLayer;
+
+        // OpenStreetMapのタイルレイヤーを追加
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 地図クリックイベント
+        map.on('click', function(e) {
+            polygonPoints.push([e.latlng.lat, e.latlng.lng]);
+            if (polygonLayer) {
+                map.removeLayer(polygonLayer);
+            }
+            polygonLayer = L.polygon(polygonPoints, { color: 'blue' }).addTo(map);
+        });
+
+        // 描画終了ボタンのクリックイベント
+        document.getElementById('finish-button').onclick = function() {
+            if (polygonPoints.length > 2) {
+                const latlngs = polygonPoints.map(p => `[${p[0]},${p[1]}],`).join('<br>');
+                document.getElementById('coordinates').innerHTML = latlngs;
+                polygonPoints = [];
+                if (polygonLayer) {
+                    map.removeLayer(polygonLayer);
+                }
+            }
+        };
+    </script>
+</body>
+</html>
