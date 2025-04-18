@@ -1,0 +1,71 @@
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.eachcontainer {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+#dividestatus{
+    width: 100%;
+    height: auto;
+    position: relative;     
+}
+
+#weekly-status-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.weekly-status-item {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px;
+  background-color: #f8f9fa;
+  position: relative;
+  /*min-width: 80px; /* ボックスの最小幅を設定 */
+}
+
+.day-of-week {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.status-number {
+  font-size: 1.5rem;
+  color: #333;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; /* 高さを固定 */
+}
+
+.check-mark {
+  position: relative; /* 親要素内で中央に配置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px; /* チェックマークのサイズを固定 */
+  height: 24px;
+  margin: 0 auto; /* 中央揃え */
+}
+
+.white-text {
+  /* テキストを透明にする */
+    color: transparent;
+}

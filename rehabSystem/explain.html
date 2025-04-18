@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="title">リハビリ</a>
+      </div>
+    </nav>
+    
+
+    <div id="explain" class="my-2 d-flex justify-content-between align-items-center">
+      <h3 class="m-auto text-center">使い方</h3>
+    </div>
+
+    <!-- cards -->
+    <div id="explainCards" class="m-2 d-flex flex-wrap justify-content-center">
+      <!-- 1つ目のカード -->
+      <div class="card m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">1. リハビリの種類を選択する</h5>
+        <p class="card-text">リハビリの種類を選択してください。<br>選択したら「保存する」を押してください。</p>
+        <a href="setting.html" class="btn btn-primary">リハビリ選択</a>
+      </div>
+      </div>
+
+      <!-- 2つ目のカード -->
+      <div class="card m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">2. リハビリに取り組む</h5>
+        <p class="card-text">リハビリに取り組んでください。</p>
+      </div>
+      </div>
+
+      <!-- 3つ目のカード -->
+      <div class="card m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">3. QRコードを読み取る</h5>
+        <p class="card-text">リハビリが終わったら、QRコードを読み取ってください。<br>QRコードは、リハビリの種類によって異なります。<br>QRコードを読み取ると、リハビリの達成状況が記録されます。</p>
+      </div>
+      </div>
+
+      <!-- 4つ目のカード -->
+      <div class="card m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">4. スタンプを獲得する</h5>
+        <p class="card-text">QRコードを読み取ると、スタンプが獲得できます。<br>スタンプは、リハビリの達成状況を記録するために使用されます。</p>
+      </div>
+      </div>
+    </div>
+    
+    <!-- divで最後までスクロールできるようにする -->
+    <div style="height: 100px;"></div>
+
+    <!--フッター-->
+    <div id="footer" class="container-fluid">
+      <div class="fixed-bottom bg-white bg-opacity-75 m-auto">
+        <div class="row p-2 m-auto">
+          <div class="col-3">
+            <div class="text-center m-auto">
+              <a href="index.html" class="btn btn-link text-black text-decoration-none text-nowrap">
+                <i class="bi bi-house fs-2 fw-bold"></i><br>
+              ホーム</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="text-center m-auto">
+              <a href="explain.html" class="btn btn-link text-primary text-decoration-none text-nowrap">
+                <i class="bi bi-question-circle fs-2 fw-bold"></i><br>
+              使い方</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="text-center m-auto">
+              <a href="setting.html" class="btn btn-link text-black text-decoration-none text-nowrap">
+              <i class="bi bi-gear-fill fs-2 fw-bold"></i><br>
+              設定</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>リハビリ選択</title>
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="title">リハビリ</a>
+      </div>
+    </nav>
+
+    <div class="m-2">
+      <h4 class="m-2 text-center">リハビリの種類選択</h4>
+      <!-- alert with icon(bi-info-fill) -->
+      <div class="alert alert-info d-flex align-content-center m-2 p-2" role="alert">
+        <div class="row-cols-1 align-content-center m-2 text-center">
+          <i class="bi bi-info-circle-fill fs-2"></i>
+        </div>
+        <div class="row-cols-11 m-1">リハビリの種類を選択してください。<br>選択したら「保存する」を押してください。</div>
+      </div>
+    
+      <!-- checkbox to choose kinds of rehabilitation -->
+      <div class="m-2 d-flex align-items-center justify-content-center">
+        <div class="form-check m-1">
+          <input class="form-check-input" type="checkbox" value="" id="rehabilitation1">
+          <label class="form-check-label" for="rehabilitation1">リハビリ1</label>
+        </div>
+        <div class="form-check m-1">
+          <input class="form-check-input" type="checkbox" value="" id="rehabilitation2">
+          <label class="form-check-label" for="rehabilitation2">リハビリ2</label>
+        </div>
+        <div class="form-check m-1">
+          <input class="form-check-input" type="checkbox" value="" id="rehabilitation3">
+          <label class="form-check-label" for="rehabilitation3">リハビリ3</label>
+        </div>
+        <div class="form-check m-1">
+          <input class="form-check-input" type="checkbox" value="" id="rehabilitation4">
+          <label class="form-check-label" for="rehabilitation4">リハビリ4</label>
+        </div>
+      </div>
+      <div class="m-2 d-flex align-items-center justify-content-center">
+        <div id="save" class="btn btn-primary p-auto m-auto text-center w-50">保存する</div>
+      </div>
+    </div>
+    <div style="height: 50px;"></div>
+
+    <!-- clear -->
+    <div class="m-2">
+      <h4 class="m-2 text-center">データをクリア</h4>
+      <div class="alert alert-danger d-flex align-content-center m-2 p-2" role="alert">
+        <div class="row-cols-1 align-content-center m-2 text-center">
+          <i class="bi bi-exclamation-triangle-fill fs-2"></i>
+        </div>
+        <div class="row-cols-11 m-1">この操作を行うと、全てのデータがクリアされます。</div>
+      </div>
+      <div class="m-2 d-flex align-items-center justify-content-center">
+        <div id="clear" class="btn btn-danger p-auto m-auto text-center w-50">クリアする</div>
+      </div>
+    </div>
+
+
+    <div id="footer" class="container-fluid">
+      <div class="fixed-bottom bg-white bg-opacity-75 m-auto">
+        <div class="row p-2 m-auto">
+          <div class="col-3">
+            <div class="text-center m-auto">
+              <a href="index.html" class="btn btn-link text-black text-decoration-none text-nowrap">
+                <i class="bi bi-house fs-2 fw-bold"></i><br>
+              ホーム</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="text-center m-auto">
+              <a href="explain.html" class="btn btn-link text-black text-decoration-none text-nowrap">
+                <i class="bi bi-question-circle fs-2 fw-bold"></i><br>
+              使い方</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="text-center m-auto">
+              <a href="setting.html" class="btn btn-link text-primary text-decoration-none text-nowrap">
+              <i class="bi bi-gear-fill fs-2 fw-bold"></i><br>
+              設定</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/settings.js"></script>
+  </body>
+</html>
