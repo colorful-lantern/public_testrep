@@ -88,7 +88,7 @@ function loadCheckboxStates() {
         // ポップアップで「リハビリテーションを選択してください」と表示する
         alert('初期設定を行います。次の画面で自分のリハビリテーションを種類を選択してください');
         // rehabilitation.htmlにリダイレクトする
-        location.href = 'rehabilitation.html';
+        location.href = 'setting.html';
         return;
     }
     // localstrageのkey=numberofClassにcntを保存する
