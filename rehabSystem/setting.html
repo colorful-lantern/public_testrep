@@ -17,32 +17,48 @@
     </nav>
 
     <div class="m-2">
-      <h4 class="m-2 text-center">リハビリの種類選択</h4>
+      <h4 class="m-2 mt-4 mb-2 text-center">リハビリの種類選択</h4>
       <!-- alert with icon(bi-info-fill) -->
-      <div class="alert alert-info d-flex align-content-center m-2 p-2" role="alert">
+      <div class="alert alert-light d-flex align-content-center m-2 p-2" role="alert">
         <div class="row-cols-1 align-content-center m-2 text-center">
-          <i class="bi bi-info-circle-fill fs-2"></i>
+          <i class="bi bi-info-circle-fill fs-2 text-black"></i>
         </div>
-        <div class="row-cols-11 m-1">リハビリの種類を選択してください。<br>選択したら「保存する」を押してください。</div>
+        <div class="row-cols-11">
+          <div class="form-check m-0 ps-2 text-black">
+            <p class="m-0 p-0">取り組むリハビリを選んでください。</p>
+            <i class="bi bi-square text-secondary"></i> <b>取り組まない</b> リハビリ<br>
+            <i class="bi bi-check-square-fill text-primary"></i> <b>取り組む</b> リハビリ
+          </div>
+        </div>
       </div>
     
       <!-- checkbox to choose kinds of rehabilitation -->
       <div class="m-2 d-flex align-items-center justify-content-center">
-        <div class="form-check m-1">
-          <input class="form-check-input" type="checkbox" value="" id="rehabilitation1">
-          <label class="form-check-label" for="rehabilitation1">リハビリ1</label>
-        </div>
-        <div class="form-check m-1">
-          <input class="form-check-input" type="checkbox" value="" id="rehabilitation2">
-          <label class="form-check-label" for="rehabilitation2">リハビリ2</label>
-        </div>
-        <div class="form-check m-1">
-          <input class="form-check-input" type="checkbox" value="" id="rehabilitation3">
-          <label class="form-check-label" for="rehabilitation3">リハビリ3</label>
-        </div>
-        <div class="form-check m-1">
-          <input class="form-check-input" type="checkbox" value="" id="rehabilitation4">
-          <label class="form-check-label" for="rehabilitation4">リハビリ4</label>
+        <div class="row m-2">
+          <div class="col-6">
+            <div class="form-check m-1">
+              <input class="form-check-input" type="checkbox" value="" id="rehabilitation1">
+              <label class="form-check-label text-nowrap" for="rehabilitation1">理学療法</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check m-1">
+              <input class="form-check-input" type="checkbox" value="" id="rehabilitation2">
+              <label class="form-check-label text-nowrap" for="rehabilitation2">言語療法</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check m-1">
+              <input class="form-check-input" type="checkbox" value="" id="rehabilitation3">
+              <label class="form-check-label" for="rehabilitation3">作業療法</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check m-1">
+              <input class="form-check-input" type="checkbox" value="" id="rehabilitation4">
+              <label class="form-check-label text-nowrap" for="rehabilitation4">心理療法</label>
+            </div>
+          </div>
         </div>
       </div>
       <div class="m-2 d-flex align-items-center justify-content-center">
@@ -69,22 +85,22 @@
     <div id="footer" class="container-fluid">
       <div class="fixed-bottom bg-white bg-opacity-75 m-auto">
         <div class="row p-2 m-auto">
-          <div class="col-3">
-            <div class="text-center m-auto">
+          <div class="col-4">
+            <div id="homebtn" class="text-center m-auto">
               <a href="index.html" class="btn btn-link text-black text-decoration-none text-nowrap">
                 <i class="bi bi-house fs-2 fw-bold"></i><br>
               ホーム</a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="text-center m-auto">
+          <div class="col-4">
+            <div id="explainbtn" class="text-center m-auto">
               <a href="explain.html" class="btn btn-link text-black text-decoration-none text-nowrap">
                 <i class="bi bi-question-circle fs-2 fw-bold"></i><br>
               使い方</a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="text-center m-auto">
+          <div class="col-4">
+            <div id="settingbtn" class="text-center m-auto">
               <a href="setting.html" class="btn btn-link text-primary text-decoration-none text-nowrap">
               <i class="bi bi-gear-fill fs-2 fw-bold"></i><br>
               設定</a>

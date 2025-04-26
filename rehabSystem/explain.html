@@ -18,7 +18,7 @@
     </nav>
     
 
-    <div id="explain" class="my-2 d-flex justify-content-between align-items-center">
+    <div id="explain" class="mt-4 mb-2 d-flex justify-content-between align-items-center">
       <h3 class="m-auto text-center">使い方</h3>
     </div>
 
@@ -28,11 +28,18 @@
       <div class="card m-2" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">1. リハビリの種類を選択する</h5>
-        <p class="card-text">リハビリの種類を選択してください。<br>選択したら「保存する」を押してください。</p>
-        <a href="setting.html" class="btn btn-primary">リハビリ選択</a>
+        <p class="card-text"><b>はじめて</b> このシステムを使用する方は、設定画面からリハビリの種類を選択してください。<br>選択したら「保存する」を押してください。</p>
+        <div class="alert alert-warning d-flex align-content-center m-2 p-2" role="alert">
+          <div class="row-cols-1 align-content-center m-2 text-center">
+            <i class="bi bi-lightbulb fs-3"></i>
+          </div>
+          <div class="row-cols-11 d-flex align-items-center">
+            何回でも取り組むリハビリの種類を変更することができます。
+          </div>
+        </div>
+        <a href="setting.html" class="btn btn-outline-primary w-50">設定画面へ</a>
       </div>
       </div>
-
       <!-- 2つ目のカード -->
       <div class="card m-2" style="width: 18rem;">
       <div class="card-body">
@@ -45,7 +52,7 @@
       <div class="card m-2" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">3. QRコードを読み取る</h5>
-        <p class="card-text">リハビリが終わったら、QRコードを読み取ってください。<br>QRコードは、リハビリの種類によって異なります。<br>QRコードを読み取ると、リハビリの達成状況が記録されます。</p>
+        <p class="card-text">リハビリが終わったら、QRコードを読み取ってください。
       </div>
       </div>
 
@@ -53,7 +60,7 @@
       <div class="card m-2" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">4. スタンプを獲得する</h5>
-        <p class="card-text">QRコードを読み取ると、スタンプが獲得できます。<br>スタンプは、リハビリの達成状況を記録するために使用されます。</p>
+        <p class="card-text">QRコードを読み取ると、自動でホーム画面が開き、スタンプが獲得できます。
       </div>
       </div>
     </div>
@@ -65,31 +72,28 @@
     <div id="footer" class="container-fluid">
       <div class="fixed-bottom bg-white bg-opacity-75 m-auto">
         <div class="row p-2 m-auto">
-          <div class="col-3">
-            <div class="text-center m-auto">
+          <div class="col-4">
+            <div id="homebtn" class="text-center m-auto">
               <a href="index.html" class="btn btn-link text-black text-decoration-none text-nowrap">
                 <i class="bi bi-house fs-2 fw-bold"></i><br>
               ホーム</a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="text-center m-auto">
+          <div class="col-4">
+            <div id="explainbtn" class="text-center m-auto">
               <a href="explain.html" class="btn btn-link text-primary text-decoration-none text-nowrap">
                 <i class="bi bi-question-circle fs-2 fw-bold"></i><br>
               使い方</a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="text-center m-auto">
+          <div class="col-4">
+            <div id="settingbtn" class="text-center m-auto">
               <a href="setting.html" class="btn btn-link text-black text-decoration-none text-nowrap">
               <i class="bi bi-gear-fill fs-2 fw-bold"></i><br>
               設定</a>
             </div>
         </div>
       </div>
-    </div>
-
-    <script src="js/script.js"></script>
-    
+    </div>    
   </body>
 </html>

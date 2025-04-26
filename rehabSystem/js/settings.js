@@ -1,11 +1,13 @@
 // htmlのid=rehabilitation1~4のcheckboxのvalueをlocalstorageに保存する
-document.getElementById('save').addEventListener('click', function() {
-    document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
-        const key = checkbox.id;
-        const value = checkbox.checked;
-        localStorage.setItem(key, value);
+['save', 'homebtn', 'explainbtn'].forEach(function(buttonId) {
+    document.getElementById(buttonId).addEventListener('click', function() {
+        document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+            const key = checkbox.id;
+            const value = checkbox.checked;
+            localStorage.setItem(key, value);
+        });
+        saveCheckboxStates();
     });
-    saveCheckboxStates();
 });
 
 
